@@ -1,0 +1,18 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local datasets / artifacts
+data/
+tmp/
+models/*.h5
+models/*.tflite
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
