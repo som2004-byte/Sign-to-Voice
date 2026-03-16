@@ -12,8 +12,6 @@ def run_webcam_hand_tracking():
     model_path = "models/hand_landmarker.task"
 
     base_options = python.BaseOptions(model_asset_path=model_path)
-    # Some MediaPipe versions do not expose VisionRunningMode.
-    # We rely on the default IMAGE mode here.
     options = vision.HandLandmarkerOptions(
         base_options=base_options,
         num_hands=2,
